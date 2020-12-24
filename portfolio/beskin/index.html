@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>베스킨라빈스 랜딩페이지</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <section id="sec_01"></section>
+    <section id="sec_02">
+        <img src="images/side_source_01.png" class="side1" alt="인사하는 펭수">
+        <img src="images/side_source_02.png" class="side2" alt="펭수와 크림치즈">
+    </section>
+
+    <section id="sec_03">
+        <div class="product">
+            <a href="https://www.baskinrobbins.co.kr/menu/view.php?seq=5611" 
+            target="blank">
+                <img src="images/product_01.png" alt="아이스크림라떼">
+            </a>
+            <a href="https://www.baskinrobbins.co.kr/menu/view.php?seq=6234" 
+            target="blank">
+                <img src="images/product_02.png" alt="펭수아슈크림블라스트">
+            </a>
+            <a href="https://www.baskinrobbins.co.kr/menu/view.php?seq=6351" 
+            target="blank">
+                <img src="images/product_03.png" alt="보라보라아이스모찌">
+            </a>
+            <a href="https://www.baskinrobbins.co.kr/menu/view.php?seq=6233" 
+            target="blank">
+                 <img src="images/product_04.png" alt="펭수케이크">
+            </a>
+        </div>
+    </section>
+    <div class="productBg"></div>
+    <section id="sec_04">
+        <div id="map"></div>
+    </section>
+    <footer id="ft">
+        <div class="wrapper">
+        <img src="images/logo.png" class="logo" alt="베스킨라빈스로고">
+         <p>사업자 등록번호:303-81-09535 비알코리아(주)대표이사 김창대 서울특별시 서초구 
+             남부순환로 2620(양재동 11-149번지)<br>
+             TEL:080-555-3131 개인정보관리 책임자 : 김경우</p>
+         <p>Copyright ⓒ2016BRKOREA Company. All Rights Reserverd.</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c7bf934320e64e9c612931633061635d"></script>
+<script>
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = { 
+        center: new kakao.maps.LatLng(37.495968, 126.842986), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };
+
+var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+// 마커가 표시될 위치입니다 
+var markerPosition  = new kakao.maps.LatLng(37.495968, 126.842986); 
+
+// 마커를 생성합니다
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+
+// 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+// marker.setMap(null);    
+</script>
+</body>
+</html>

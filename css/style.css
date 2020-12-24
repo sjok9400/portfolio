@@ -1,0 +1,288 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'MapoFlowerIsland';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MapoAgape';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoAgapeA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-4Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-5Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-9Black';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MapoGoldenPier';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Wemakeprice-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Wemakeprice-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 폰트 영역끝 */
+
+/* 헤더 시작 */
+.container{width:1200px; height:100%; margin:0 auto;}
+#header{position:fixed; z-index:1; width:100%; background:#fff;}
+#header .container {}
+#header .container .nav{ width:100%; height:60px; }
+#header .container .nav ul {}
+#header .container .nav ul li{float: left; width: 17.5%; margin-right: 10%;}
+#header .container .nav ul li:last-child {margin-right: 0;}
+#header .container .nav ul li a{display:block; color:#ffae00; font-family: 'S-CoreDream-5Medium'; text-align: center; font-weight:bold; font-size: 0.9rem; width:100%;}
+@import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+    .snip1582 {
+      border: none;
+      cursor: pointer;
+      font-size: 22px;
+      line-height: 1em;
+      margin: 15px 0;
+      padding: 12px 40px 10px;
+      position: relative;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    
+    .snip1582:before,
+    .snip1582:after {
+      border-color: transparent;
+      -webkit-transition: all 0.25s;
+      transition: all 0.25s;
+      border-style: solid;
+      border-width: 0;
+      content: "";
+      height: 24px;
+      position: absolute;
+      width: 24px;
+    }
+    
+    .snip1582:before {
+      border-color: #ffae00; 
+      border-top-width: 2px;
+      left: 0px;
+      top: -5px;
+    }
+    
+    .snip1582:after {
+      border-bottom-width: 2px;
+      border-color: #ffae00;
+      bottom: -5px;
+      right: 0px;
+    }
+
+    
+    .snip1582:hover:before,
+    .snip1582.hover:before,
+    .snip1582:hover:after,
+    .snip1582.hover:after {
+      height: 100%;
+      width: 100%;
+    }
+/*헤더 끝  */
+
+/* 메인시작 */
+#main {width: 100%; height: 100vh; position: relative; overflow: hidden;}
+#main .circle {position: absolute; border-radius: 50%; background:#eee; opacity:0.7; }
+#main .circle1 {width:700px; height:700px; top:-10%; left:-10%; animation: move 3s infinite linear; }
+#main .circle2 {width:300px; height:300px; top:45%; left:30%; animation: move2 4s infinite linear;}
+#main .circle3 {width:100px; height:100px; top:70%; left:15%; animation: move4 3s infinite linear;}
+#main .circle4 {width:20px; height:20px; top:40%; left:40%; animation: move2 4s infinite linear;}
+#main .circle5 {width:30px; height:30px; top:10%; left:45%; animation: move4 3s infinite linear;}
+#main .circle6 {width:15px; height:15px; top:40%; left:55%; animation: move4 4s infinite linear;}
+@keyframes move{
+    0%{opacity:0.2;}
+    25%{opacity:0.4;}
+    50%{opacity:0.7;}
+    75%{opacity:0.4;}
+    100%{opacity:0.2;}
+}
+@keyframes move2{
+    0%{opacity:0.6;}
+    25%{opacity:0.4;}
+    50%{opacity:0.2;margin-top:5px; margin-left:5px;}
+    75%{opacity:0.4;margin-top:10px; margin-left:10px;}
+    100%{opacity:0.6;margin-top:7px; margin-left:6px;}
+}
+@keyframes move3{
+    0%{opacity:0.3;}
+    25%{opacity:0.5;}
+    50%{opacity:0.8;}
+    75%{opacity:0.5;}
+    100%{opacity:0.3;}
+}
+@keyframes move4{
+    0%{opacity:0.3; margin-top:0;}
+    25%{opacity:0.5;margin-top:7px;}
+    50%{opacity:0.8;margin-top:15px;}
+    75%{opacity:0.5;margin-top:25px; margin-left:10px;}
+    90%{opacity:0.1;margin-top:30px;margin-left:12px;}
+    100%{opacity:0.2;margin-top:25px;margin-left:10px;}
+}
+#main img {position: absolute; width: 100%; }
+
+#main img {position: absolute; width: 100%; }
+#main .container {width:1200px; height:100%; margin:0 auto; position: relative; }
+#main .container .main_text { position:absolute; top:50%; left:0; transform: translateY(-50%);}
+#main .container .main_text h1 {font-family:'OTEnjoystoriesBA'; font-size:7rem; color:#fff;
+text-shadow: 5px 8px 5px rgba(40, 40, 40, 0.6);}
+#main .container .main_text h3 { font-size:1.5rem;color:#fff; line-height:3; font-family: 'S-CoreDream-5Medium'; text-shadow: 3px 4px 7px rgba(40,40,0,6);}
+#main .container .scroll .scroll_box{ position:absolute; top:75%; left:50%; width:30px; height:50px; border:2px solid #fff; background:transparent; border-radius: 50px; }
+#main .container .scroll .scroll_box .scroll_move { position:absolute; top:50%; left:50%; transform: translate(-50%,-50%); width:10px; height:10px; background:#fff; border-radius: 50px; animation: scroll 1s infinite linear;}
+#main .container .scroll .scroll_txt{position: relative;}
+#main .container .scroll .scroll_txt p {position:absolute; top:0; left:-80%; width:100px; margin-top:60px; font-size:0.8rem; color:#fff; font-family:'S-CoreDream-4Regular';}
+@keyframes scroll {
+    0%{opacity:1;margin-top: -10px;}
+    35%{opacity:0.8;margin-top: 0px;}
+    70%{opacity:0.5;margin-top: 5px;}
+    100%{opacity:0.3; margin-top: 12px;}
+}
+/* 메인 끝 */
+
+/*img에 position넣어서 겹쳐서 사용하는방법 / css로 백그라운드 속성을 이용해서 하는방법..*/
+
+
+#hello {width:100%;}
+#hello .container {width:1200px; margin:0 auto; }
+#hello .container .hello_wrap {position:relative; float:left; width:600px; height:100%; padding:200px 0px;}
+#hello .container .hello_wrap img{position:absolute; top:20%; left:-13%; width:70px; animation: round 3s linear infinite; transform-origin: 50% 50%;}
+ 
+@keyframes round{
+	100% {transform: rotate(360deg);}
+}
+#hello .container .hello_wrap h1{ font-family:'OTEnjoystoriesBA'; font-size:7rem; color:#009640; font-weight:bold; padding-left:20px;}
+#hello .container .hello_wrap p {font-size:1rem; color:#181818;  text-align:left; line-height: 2; padding: 20px; font-family:'S-CoreDream-4Regular';}
+#hello .container .hello_img {float: right; width:500px; height:500px; padding:200px 0px; height:100%;}
+#hello .container .hello_img img {width:500px; height:600px;}
+
+/* 어바웃 시작 (2페이지 시작)*/
+/*프로필 영역 */
+#proflie .title {position: relative;}
+#proflie .container {width:1200px; margin:0 auto;}
+#proflie .container h1 {font-family:'OTEnjoystoriesBA'; font-size:7rem; color:#009640; padding-top:120px;}
+#proflie .container p {padding-top:20px; font-family: 'S-CoreDream-4Regular'; font-size:1.2rem; color:#181818; line-height: 2;}
+#proflie .container .picture {padding-top:50px;
+}
+#proflie .container .wrap > div {float:left; width: 33%; padding:70px 0px 200px 0px;}
+#proflie .container .wrap > div h3 {font-family:'OTEnjoystoriesBA'; font-size:2.5rem; color:#009640; line-height:2;}
+#proflie .container .wrap .intro dl dt {display: inline-block; color: #009640; font-weight: bold; width: 60px; line-height:2;}
+#proflie .container .wrap .intro dl dd {display: inline-block; font-family: 'S-CoreDream-4Regular';}
+#proflie .container .wrap > div ul li {line-height: 2; font-family: 'S-CoreDream-4Regular';}
+#proflie .container .wrap > div ul li span {margin-right: 5px; font-weight:bold;}
+/* 프로필영역 끝 */
+
+/* 어바웃 영역 */
+#about { height:100%; background:#009640; position: relative;}
+#about .flower img{position:absolute; top:12%; left:36%; width:70px; animation: round 3s linear infinite; transform-origin: 50% 50%;}
+
+@keyframes round{
+	100% {transform: rotate(360deg);}
+}
+#about .container h1 {  font-family:'OTEnjoystoriesBA'; color:#fff; font-size:6rem; padding-top:100px; }
+#about .container .about_wrap {float:left; width:376px; height:426px; background:#fff; margin: 100px 0px; }
+#about .container .about_wrap .sk_cont {padding:0px 20px; }
+#about .container .about_wrap .sk_cont .design{ color:#009640; text-align:center; line-height:36px; font-weight:bold; width:150px; height:40px; border:3px solid #009640; margin-left:100px;}
+#about .container .about_wrap .sk_cont p{padding-top:20px; line-height:1.5; text-align: center;font-family: 'S-CoreDream-4Regular'; font-size: 0.9rem;}
+#about .container .about_wrap .sk_cont .purblishing{ color:#009640; text-align:center; line-height:36px; font-weight:bold; width:150px; height:40px; border:3px solid #009640; margin-left:100px; margin-top:30px;}
+#about .container .about_wrap .sk_cont > div:hover{ background:#009640; color:#fff; transition: 1s;}
+
+#about .container .about_wrap h2 {text-align:center; padding:20px; font-family: 'OTEnjoystoriesBA'; color:#009640; font-size:3rem;}
+#about .fav {float:left; width:376px; height:426px; background:#fff; margin:100px 36px;}
+#about .fav h2 {text-align:center; padding:20px; font-family: 'OTEnjoystoriesBA'; color:#009640; font-size:3rem;}
+#about .fav .wrap { width:250px; height:250px; margin:0 auto;}
+
+
+#about .fav .wrap > div {width:100px; height:100px; float:left; margin:10px 10px 35px 10px;}
+#about .fav .wrap > div img {}
+#about .fav .wrap > div p {text-align: center; font-weight: bold; padding-bottom:20px; color:#181818; line-height: 1.5;}
+
+#about .certi { float:left;width:376px; height:426px; background:#fff; margin-top:100px;}
+#about .certi h2 {text-align:center; padding:20px; font-family: 'OTEnjoystoriesBA'; color:#009640; font-size:3rem;}
+#about .certi .chara {text-align: center;}
+/* 어바웃 끝 (2페이지 끝)*/
+
+
+/* 포트폴리오 영역 시작 (3페이지) */
+#sec_01{width:100%; height:100%; }
+#sec_01 .container {height:100%; }
+#sec_01 h1 {padding-top:150px; font-family: 'OTEnjoystoriesBA'; color:#FFAE00; font-size:6rem;}
+#sec_01 .container .wrap {}
+#sec_01 .container p {padding-top:50px; font-size:1rem; font-family: 'S-CoreDream-4Regular'; line-height:4;}
+#sec_01 .container .wrap > div {float:left; width:255px; height:399px;  background:#eee; 
+margin:30px 22.5px; margin-bottom:200px;}
+
+#sec_01 .container .wrap > div .pop {width:100%; height:100%; display:block; position: relative;}
+#sec_01 .container .wrap > div .pop .boxbg1 {display:block; width:100%; height:100%; position:absolute; top:0; left: 0; z-index:1; background:#181818; transition: 0.8s ease; opacity:0; color:#fff; text-align: center; padding-top:200px; font-weight:bold; }
+#sec_01 .container .wrap > div .pop:hover .boxbg1 {opacity:0.8;}
+
+/* #sec_01 .container h1 {display:inline-block;} */
+
+.popup{position: fixed; display: none; width: 100%; height: 100%; top: 0; left: 0; z-index:999;}
+.popup .popbg{position: fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6);z-index:1;}
+.popup .popcont{padding:20px; background:#fff; position:absolute; top: 50%; left: 50%; transform:translate(-50%, -50%); z-index:2; width:600px; height: 600px; overflow-y: scroll;}
+.popup .popcont img {width: 100%;}
+.popup .close {position:absolute; left: calc(50% + 245px); top: calc(50% - 325px); border:1px solid #333; z-index:1; width:55px; height:25px; background:#fff; font-family: 'S-CoreDream-4Regular';}
+
+
+#sec_02 { width:100%; margin-bottom:100px;}
+#sec_02 .container { height:100%;}
+#sec_02 .container p {font-size:1rem; font-family:'S-CoreDream-4Regular'; line-height:4; padding-bottom:25px;}
+/* #sec_02 .container .slide {width:1920px; } */
+
+/*젤라또*/
+#sec_02 .container .slide > div {float:left; padding-bottom:200px;}
+#sec_02 .container .slide1 .mokup{float:left;width:55%; padding-right: 100px;}
+#sec_02 .container .slide1 .slide_txt {float:left; margin-left:5%; width:40%;}
+#sec_02 .container .slide_txt h1{font-size: 2rem; font-weight:bold; color:#181818; line-height: 1.2; }
+#sec_02 .container .slide_txt h2{font-size: 2rem; color:#383636; line-height: 1.2;}
+#sec_02 .container .slide_txt h3{font-size: 1.5rem; color:#181818; line-height: 2;}
+#sec_02 .container .slide_txt .line{width:400px; height:2px; background:#181818; margin:20px 0;}
+#sec_02 .container .slide_txt p {line-height: 2;}
+#sec_02 .container .slide1 .button 
+#sec_02 .container .slide1 .button ul{float: left;}
+#sec_02 .container .slide1 .button ul li {float:left; padding:30px;}
+#sec_02 .container .slide1 .button ul li a{display:block; width:130px;height:40px; background:#009640; text-align: center; line-height: 40px; color:#fff; margin: 10px auto;}
+
+/* 포트폴리오 영역 끝 */
+
+/* contact 영역*/
+
+#contact { width:100%; height: 100vh; background:#FFAE00; }
+#contact .container{height:100%; }
+#contact .container h1{ color:#fff; font-size: 6rem; padding-top:100px; font-family: 'OTEnjoystoriesBA';}
+#contact .container p {line-height:30px; display: block; height:30px; font-family:'S-CoreDream-5Medium'; text-align: center; font-size:0.9rem;}
+#contact .container .wrap{}
+#contact .container .wrap > div {width: 376px; height:426px; margin-bottom:100px; background:#fff; margin:12px; float:left; }
+#contact .container .wrap > div img{  width:200px; margin:60px 85px;}
+
+
+/*  */
+
+
